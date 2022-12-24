@@ -2,7 +2,7 @@ var _ = require("lodash");
 var async = require("async");
 var startExecution = new Date();
 
-const PARALLEL = 'parallel';
+const PARALLEL = "parallel";
 
 function execute(steps, callback) {
   console.time(">>> execution time");
@@ -17,7 +17,9 @@ function execute(steps, callback) {
       const hasScript = _.has(step, "script");
 
       if (hasContainer) {
-        console.log(">>> execute step in container: " + step.container);
+        console.log(
+          ">>> execute step in container: " + step.container
+        );
         if (step.container === PARALLEL) {
           console.log(">>> execute step in parallel");
           // execute the step withou specify the limit
