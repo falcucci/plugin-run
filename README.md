@@ -4,6 +4,18 @@ This is a work in progress. It is not yet ready for use.
 
 This project contains a set of scripts that perform extract, transform, and load (ETL) tasks on data sources. These scripts are designed to facilitate the data pipeline process, allowing for the automated extraction and manipulation of data from various sources, and the loading of that data into a target database or data warehouse.
 
+### Diagram of ETL Process Flow
+
+```mermaid
+sequenceDiagram
+ETL Script->>Database: Extract Data
+Database-->>ETL Script: Data Extracted
+ETL Script->>Transformer: Transform Data
+Transformer-->>ETL Script: Data Transformed
+ETL Script->>Database: Load Transformed Data
+Database-->>ETL Script: Data Loaded
+```
+
 ### Extract
 
 The extract phase of the ETL process involves retrieving data from various sources. This could include databases, APIs, or flat files such as CSV or JSON. The scripts in this project are designed to extract data from a variety of sources, using the appropriate methods and libraries for each source type.
