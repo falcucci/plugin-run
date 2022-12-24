@@ -1,3 +1,5 @@
+This is a work in progress. It is not yet ready for use.
+
 ### ETL Scripts
 
 This project contains a set of scripts that perform extract, transform, and load (ETL) tasks on data sources. These scripts are designed to facilitate the data pipeline process, allowing for the automated extraction and manipulation of data from various sources, and the loading of that data into a target database or data warehouse.
