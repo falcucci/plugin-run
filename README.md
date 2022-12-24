@@ -22,4 +22,4 @@ The scripts in this project rely on a number of libraries and dependencies. A fu
 
 ### Usage
 
-To use the ETL scripts in this project, you will need to modify the configuration settings in the `plugins/indexjs` file to reflect the specifics of your data sources and target systems. Then, you can execute the scripts as needed to perform the ETL process on your data creating them in a specific folder called `/jobs`.
+To use the ETL scripts in this project, you will need to modify the configuration settings in the `plugins/index.js` file to reflect the specifics of your data sources and target systems. Then, you can execute the scripts as needed to perform the ETL process on your data creating them in a specific folder called `/jobs`.
