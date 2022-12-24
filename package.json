@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/falcucci/plugin-run/issues"
   },
-  "homepage": "https://github.com/falcucci/plugin-run#readme"
+  "homepage": "https://github.com/falcucci/plugin-run#readme",
+  "dependencies": {
+    "async": "^3.2.4"
+  }
 }

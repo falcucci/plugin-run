@@ -4,7 +4,6 @@ var startExecution = new Date();
 
 const PARALLEL = 'parallel';
 
-
 function execute(steps, callback) {
   console.time(">>> execution time");
   console.log(">>> initialize execution for each step");
