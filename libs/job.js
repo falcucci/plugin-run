@@ -69,4 +69,22 @@ function execute(steps, callback) {
   return;
 }
 
+function createPluginFunction(pluginConfig) {
+  const plugin = plugins[pluginConfig.name];
+  if (!plugin) {
+    throw new Error("Plugin not found: " + pluginConfig.name);
+  }
+  const p = [pluginConfig];
+
+  return function () {
+    var args = _.toArray(arguments);
+    var callback = args.pop();
+
+    p.push(args.length !== 0 ? args : undefined);
+    p.push(callback);
+
+    plugin.action.apply(this, p);
+  };
+}
+
 module.exports.execute = execute;
