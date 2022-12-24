@@ -60,7 +60,7 @@ function execute(steps, callback) {
       console.timeEnd(">>> execution time");
       console.log(">>> execution finished");
       console.log("Notifying job's error..");
-      var finalExecution = new Date() - startExecution;
+      const finalExecution = new Date() - startExecution;
       console.log(">>> execution time: " + finalExecution + "ms");
       return callback(err, result);
     }
