@@ -1,6 +1,6 @@
-var _ = require("lodash");
-var async = require("async");
-var startExecution = new Date();
+const _ = require("lodash");
+const async = require("async");
+const startExecution = new Date();
 
 const PARALLEL = "parallel";
 
