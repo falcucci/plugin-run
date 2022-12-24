@@ -1,5 +1,7 @@
 This is a work in progress. It is not yet ready for use.
 
+Soon as possible I will add some examples about how to extract data from spreadsheet or migrate informations from a database to another using temporary tables and triggers.
+
 ### ETL Scripts
 
 This project contains a set of scripts that perform extract, transform, and load (ETL) tasks on data sources. These scripts are designed to facilitate the data pipeline process, allowing for the automated extraction and manipulation of data from various sources, and the loading of that data into a target database or data warehouse.
@@ -31,6 +33,11 @@ The load phase involves writing the transformed data to a target destination, su
 ### Dependencies
 
 The scripts in this project rely on a number of libraries and dependencies. A full list of these dependencies, along with version information, can be found in the `package.json` file.
+
+# Installation
+```bash
+npm install
+```
 
 ### Usage
 
