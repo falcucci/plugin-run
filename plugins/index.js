@@ -3,7 +3,7 @@ const path = require("path");
 const _ = require("lodash");
 
 //  Load all plugins
-const files = fs.readdirSync(__dirname);
+let files = fs.readdirSync(__dirname);
 
 // Remove this file from the list
 files = _.pull(files, "index.js");
