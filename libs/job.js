@@ -1,7 +1,8 @@
 const _ = require("lodash");
 const async = require("async");
-const startExecution = new Date();
+const plugins = require("../plugins");
 
+const startExecution = new Date();
 const PARALLEL = "parallel";
 
 function execute(steps, callback) {
@@ -13,8 +14,6 @@ function execute(steps, callback) {
     function (memo, step, callback) {
       console.log(">>> execute step: " + step.name);
       const hasContainer = _.has(step, "container");
-      const hasCommand = _.has(step, "command");
-      const hasScript = _.has(step, "script");
 
       if (hasContainer) {
         console.log(
@@ -42,6 +41,7 @@ function execute(steps, callback) {
           );
         }
       } else {
+        console.log('step.name: ', step.name);
         var plugin = plugins[step.name];
 
         var params = [step].concat(memo);
