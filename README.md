@@ -42,3 +42,5 @@ npm install
 ### Usage
 
 To use the ETL scripts in this project, you will need to modify the configuration settings in the `plugins/index.js` file to reflect the specifics of your data sources and target systems. Then, you can execute the scripts as needed to perform the ETL process on your data creating them in a specific folder called `/jobs`.
+
+As an example you can check it out the `jobs` folder and the `jobs/index.js` file. In this file you can see how to use the scripts to extract data from a database, transform it and load it into another database.
